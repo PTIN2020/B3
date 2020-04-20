@@ -4,11 +4,11 @@ Repositori del grup B3 format per Nil Blanca, Javier Delgado, Josep Marches, Hé
 
 S'ha reorganitzat el nostre espai personal, on podreu trobar el codi de cada SPRINT en el seu directori indicat:
 
--Codi de l'Sprint0: [SPRINT0](B3/SPRINT0)
+-Codi de l'Sprint0: [SPRINT0](https://github.com/PTIN2020/B3/tree/master/SPRINT0)
 
--Codi de l'Sprint1: [SPRINT1](B3/SPRINT1)
+-Codi de l'Sprint1: [SPRINT1](https://github.com/PTIN2020/B3/tree/master/SPRINT1)
 
--Codi de l'Sprint2: [SPRINT2](B3/SPRINT2)
+-Codi de l'Sprint2: [SPRINT2](https://github.com/PTIN2020/B3/tree/master/SPRINT2)
 
 
 
