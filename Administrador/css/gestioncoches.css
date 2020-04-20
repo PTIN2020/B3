@@ -1,0 +1,112 @@
+
+html{
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    float: right;
+}
+
+
+
+/*Esto afecta a todas las tablas*/
+
+#tablas{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*Propiedades de ambas tablas*/
+
+.ambas{
+    width: 90%;
+    margin: 20px;
+}
+
+.tabla {
+    margin: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tabla tr td{
+    border: black 2px solid;
+    width: 20%;
+    height: 50px;
+}
+
+.tabla th{
+    border: black 2px solid; 
+    width: 20%;
+    height: 50px;
+}
+
+/*Características de las diferentes tipos de tablas que nos encontramos*/
+
+.okey{
+    background-color: #13CA2E;
+    color: white;
+}
+
+.nokey{
+    background-color: #CA2121;
+    color: white;
+}
+
+.averia{
+    background-color: rgb(255, 158, 102);
+    color: white;
+}
+
+
+/*Información desplegada por los botones*/
+
+.desplegado{
+    display: none;
+    background-color: grey;
+}
+
+.tidespl{
+    font-weight: bold;
+}
+
+/*Botones de añadir y modificar*/
+
+.botones{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.modif{
+    margin-right: 10px;
+}
+
+/*Propiedades de tablas de coche con ordenación*/
+
+table tr th {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.sorting {
+    background-color: #D4D4D4;
+}
+  
+.asc:after {
+    content: ' ↑';
+}
+  
+.desc:after {
+    content: " ↓";
+}
