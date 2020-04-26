@@ -20,7 +20,7 @@ Alguns dels llenguatges i eines utilitzades per aquest grup en l'assignatura:
 
 - [AJAX](https://www.w3schools.com/xml/ajax_xmlfile.asp): Técnica de desenvolupament web per a crear aplicacions interactives.
 
-- [Express]:(https://expressjs.com/es/): Infraestructura d'aplicacions Node.js.
+- [Express](https://expressjs.com/es/): Infraestructura d'aplicacions Node.js.
 
 - [Bootstrap](https://getbootstrap.com/): Conjunt d'eines per a disseny Web.
 
