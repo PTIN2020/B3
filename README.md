@@ -16,9 +16,17 @@ Alguns dels llenguatges i eines utilitzades per aquest grup en l'assignatura:
 
 - [Node.js](https://nodejs.org/es/): Entorn d'execució multiplataforma.
 
+- [JavaScript](https://www.javascript.com/): Llenguatge de programació.
+
+- [AJAX](https://www.w3schools.com/xml/ajax_xmlfile.asp): Técnica de desenvolupament web per a crear aplicacions interactives.
+
+- [Express]:(https://expressjs.com/es/): Infraestructura d'aplicacions Node.js.
+
 - [Bootstrap](https://getbootstrap.com/): Conjunt d'eines per a disseny Web.
 
-- [JavaScript](https://www.javascript.com/): Llenguatge de programació.
+- [MongoDB](https://www.mongodb.com/es): Sistema de base de dades NoSQL, orientat a documents i de codi obert.
+
+- [Docker](https://www.docker.com): Projecte de codi obert que automatitza el desplegament d'aplicacions dins de contenidors software. 
 
 - [HTML5](https://es.wikipedia.org/wiki/HTML5): Conjunt de tecnologies Web.
 
