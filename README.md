@@ -40,4 +40,4 @@ Alguns dels llenguatges i eines utilitzades per aquest grup en l'assignatura:
 
 - [Slack](https://app.slack.com/client/TTH9A9XFW/GTYKV7T1B/details/members): Comunicació de l'equip i entre els equips.
 
-Per a coneixer-les totes, recomenem fer-le una ullada al codi! :)
+Per a coneixer-les totes, recomenem fer-li una ullada al codi! :)
