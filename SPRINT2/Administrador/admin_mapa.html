@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vilanova Intelligent Airport</title>
+        
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/mapa.css">
+        <link rel="stylesheet" href="./css/fontello.css">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="http://code.jquery.com/jquery-3.5.0.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="./indexCabecera.html" id="botoninicio">Inicio Administrador</a>
+        </header>
+        <h3 style="font-weight: bold;">MAPA EN TIEMPO REAL</h3>
+        <div id="menumapa">
+            <h1 id="titfiltrado">Filtrado de pasajeros:</h1>
+            <ul class="nav">
+                <li class="tipofiltro">Aerolinea<span class="icon-down-dir"></span>
+                    <ul>
+                        <li>Vilanova Airlines</li>
+                        <li>Vueling Airlines</li>
+                        <li>Ryanair</li>
+                        <li>QATAR Airways</li>
+                        <li>KLM</li>
+                        <li>Iberia</li>
+                    </ul>
+                </li>   
+                <li class="tipofiltro">Tipo de vuelo<span class="icon-down-dir"></span>
+                    <ul>
+                        <li>Nacional</li>
+                        <li>Internacional</li>
+                        <li>Regional</li>
+                    </ul>
+                </li>
+                <li class="tipofiltro">Planta<span class="icon-down-dir"></span>
+                    <ul>
+                        <li>Planta 0</li>
+                        <li>Planta 1</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="mapa">
+        </div>
+        <!-- JQuery, JS -->
+        <script src="js/menu.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
