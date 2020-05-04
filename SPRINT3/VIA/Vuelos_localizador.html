@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/estilo_vuelos_localizador.css">
+  <link rel="stylesheet" href="./js/javascript.js">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  
+
+<title>Vilanova International Airport</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid"id="containernavbar">
+      <a class="navbar-brand" href="index.html"> <img src="./img/logo.png" class="logo-brand" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="services.html" id="textnav">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Mapa.html" id="textnav">Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Como_llegar.html" id="textnav">Accesos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="textnav">Contacto</a>
+          </li>
+    
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--TEXT VILANOVA-->
+
+<div class="row" id="cabecera">
+    <div class="col-sm-2"  id="descripcion">
+        <img src="./img/degradado.jpg" class="degradado" alt="guion">
+      </div>
+    <div class="col-sm-10"  id="descripcion">
+    <h1>Localizador Vuelos - Vilanova</h1>
+    <p >Terminal 2</p>
+  </div>
+</div>
+</header>
+
+
+<!--CAJA LOZALIZADOR-->
+
+<!--<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+          1 of 2
+        </div>
+        <div class="col">
+          2 of 2
+        </div>
+      </div>
+  </div> -->
+
+<!--Input localizador-->
+    <div class="input-group mb-3 input-group-lg" id="localizador_icono">
+      <input type="text" class="form-control" placeholder="Localizador" id="inputlocalizador">
+      <div class="input-group-append"></div>
+        <span class="input-group-text" id="lupa"><i class="fas fa-search"></i>
+        </span>
+      </div>
+    </div>
+
+<!--Primer container con vuelo-->
+    <div class="container-fluid" id="localizadorvuelodestinos">
+      <div class="input-group-append" id="grupo">
+       <h2 id="identificador">Vuelo:</h2>
+       <h2 id="nidentificador">IBE8335</h2>
+     </div>
+     <div class="d-flex justify-content-center">
+    <div class="input-group-append" id="grupo2">
+       <p id="aeropuerto_origen">Vilanova i la Geltrú- Aeropuerto de Vilanova (VIA)</p>
+       <i class="fa fa-arrow-right" aria-hidden="true" id="flecha"></i>
+        <p id="aeropuerto_destino">Badajoz(BJZ)</p>
+      </div>
+    </div> 
+   </div>
+
+
+<!--Segundo container-->
+   <div class="container-fluid" id="salidallegada">
+    <div class="container-fluid" id="salidallegada2">
+      <div class="d-flex justify-content-center">
+      <div class="input-group-append" id="grupo3">
+      <i class="fas fa-plane-departure"id="icon1"></i>
+      <p>Salida:</p>
+      <p>Vilanova International Airport (VIA)</p>
+      <i class="fas fa-plane-arrival" id="icon1"></i>
+      <p>Llegada:</p>
+      <p>Badajoz(BJZ)</p>
+    </div>
+  </div>
+  </div>
+   
+    <div class="container-fluid" id="salidallegada3">
+      <table class="table table-responsive-md table-responsive-sm">
+        <thead class="thead-dark">
+          <tr>
+            <th>Aerolínea</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Terminal</th>
+            <th>Puerta</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vueling</td>
+            <td>27/04/2020</td>
+            <td>15:10</td>
+            <td>2</td>
+            <td>54</td>
+            <td>En hora</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  
+    
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+ 
+</div>
+
+
+
+  
+   
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+  <div id="foot">
+    <div id="contacto" class= "conten">
+      <h3 class="titulo">Contacto</h3> <br>
+      <div id="opciones">
+        <i class="fas fa-phone"></i> 999 999 999 <br>
+        <i class="far fa-envelope"></i> aeropuerto@vilanova.com <br>
+        <i class="fas fa-map-marker-alt"></i> Av.de Víctor Balaguer
+      </div>
+    </div>
+    <div id="redes" class= "conten">
+      <h3 class="titulo">Síguenos en redes sociales</h3> <br>
+      <div class="iconosredes">
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+    <div id="banners" class="conten">
+      <h3 class="titulo">Descarga nuestra app</h3> <br>
+      <div class="iconosapps">
+        <button class= "banner">
+          <div class="icono">
+            <i id="google" class="fab fa-google-play"></i> 
+          </div>
+          <div class="letras">
+            <p>Disponible en</p>
+            <strong>Google Play</strong>
+          </div>
+        </button>
+        <a href="google.com" target="_blank">
+          <button class= "banner">
+            <div class="icono">
+              <i id="apple" class="fab fa-apple fa-lg"></i> 
+            </div>
+            <div class="letras">
+              <p>Disponible en</p>
+              <strong>Apple Store</strong>
+            </div>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div> <!--- Aquí acaba el contenedor del pie de pagina -->
+</footer>
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/javascript.js"></script>
+    
+       
+    
+    
+ 
+</body>
+
+</html>

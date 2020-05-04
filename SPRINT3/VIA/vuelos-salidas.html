@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/vuelos.css">
+  <link rel="stylesheet" href="js/javascript-vuelos.js">
+  <link rel="stylesheet" href="js/javascript.js">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+<title>Vilanova International Airport</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid"id="containernavbar">
+      <a class="navbar-brand" href="index.html"> <img src="./img/logo.png" class="logo-brand" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="services.html" id="textnav">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Mapa.html" id="textnav">Mapa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Como_llegar.html" id="textnav">Acesos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="textnav">Contacto</a>
+          </li>
+    
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--TEXT VILANOVA-->
+
+<div class="row" id="cabecera">
+    <div class="col-sm-2"  id="descripcion">
+        <img src="./img/degradado.jpg" class="degradado" alt="guion">
+      </div>
+    <div class="col-sm-10"  id="descripcion">
+    <h1>Salidas - Vilanova</h1>
+    <p >Terminal 2</p>
+  </div>
+ 
+</div>
+ 
+</header>
+
+	<div class="d-flex justify-content-center ">
+		<div class= " main  ">	
+				<!-- Caja de filtros -->
+				<div class="mt-5 border border-info container"> 
+
+					<div class="row ml-2 mt-2  d-flex justify-content-start"> 
+						<a class="h2"> Salidas de </a>	
+					</div>
+
+					<div class="row d-flex justify-content-center"> 
+						<a class="h1"> Vilanova i la Geltru - Aeropuerto De Vilanova </a>	
+					</div>
+
+					<div class="row d-flex justify-content-center"> 
+						<a class="h2"> Terminal 2 </a>	
+					</div>
+					<!-- Horario -->
+					<div class="row mt-1 d-flex justify-content-center"> 
+
+						<div class="border" style="width: 30%; height: 120px;"> 
+							<div class="mt-2 ml-2"> 
+								<a class="text-info font-weight-bold"> Horario: </a>	
+							</div>
+
+							<div class="row mt-2 d-flex align-items-center justify-content-center"> 
+
+								<a class="mr-2"> De </a>
+
+								  <select class="custom-select my-1 mr-sm-3" style="width: 85px" id="inlineFormCustomSelectPref">
+									<option selected>06:00</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								  </select>
+
+								<a class="mr-2"> a </a>
+
+								<select class="custom-select my-1 mr-sm-3" style="width: 85px" id="inlineFormCustomSelectPref">
+									<option selected>07:00</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								 </select>
+							</div>
+
+							<div class="mt-2 d-flex justify-content-center"> 
+							
+								<input type="range" class="form-control-range" style="width: 90%" id="formControlRange">
+							  							
+							</div>
+
+						</div>
+						<!-- Filtros-->
+						<div class="border" style="width: 50%; height: 120px;"> 
+
+								<div class="mt-2 ml-2"> 
+									<a class=" text-info font-weight-bold"> Filtros: </a>	
+								</div>
+								<!-- Aerolineas -->
+								<div class="row mt-1 d-flex align-items-center justify-content-center"> 
+
+									<a class="mr-2 font-weight-bold"> Aerolineas: </a>	
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+									  <label class="form-check-label" for="inlineCheckbox1">IBERIA</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+									  <label class="form-check-label" for="inlineCheckbox2">Vueling</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+									  <label class="form-check-label" for="inlineCheckbox2">AirEuropas</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+									  <label class="form-check-label" for="inlineCheckbox3">Ryanair (disabled)</label>
+									</div>
+
+								</div>
+								<!-- Origen -->
+								<div class="row mt-2 d-flex align-items-center justify-content-center"> 
+
+									<a class="mr-2 font-weight-bold"> Origen: </a>	
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+									  <label class="form-check-label" for="inlineCheckbox1">BCN</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+									  <label class="form-check-label" for="inlineCheckbox2">MAD</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+									  <label class="form-check-label" for="inlineCheckbox2">VLC</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+									  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+									  <label class="form-check-label" for="inlineCheckbox3">MAH </label>
+									</div>
+								</div>
+							
+						</div>
+
+					</div>
+
+					<div class="row mt-2 mb-2 d-flex justify-content-center"> 
+							<div class="invisible"> <a class="mr-1"> Actualizar </a></div>
+							<div> <a class="ml-5 mr-1" href="#"> Actualizar </a></div>
+							<div> <a class="font-weight-light light"> Actualizado hace 2 seg </a></div>							
+							
+					</div>
+				</div>
+				
+				<!-- Tablas de vuelos -->
+				<div class=" mt-4 container">
+					<div class="row d-flex justify-content-start "> 
+						<a class="ml-5 mr-1"> Miércoles 13/03/2020 </a>
+					</div>
+
+					<div class="mt-2"> 
+						<table class="table table-hover">
+						  <thead class="thead-dark">
+							<tr>
+							  <th scope="col">Hora</th>
+							  <th scope="col">Vuelo</th>
+							  <th scope="col">Destino</th>
+							  <th scope="col">Aerolinea</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">9:00</th>
+							  <td class="tabla-vuelos-text" href="#">IBE6535</td>
+							  <td>Valencia(VLC)</td>
+							  <td class="font-weight-bolder text-info">IBERIA</td>
+							</tr>
+							<tr>
+							  <th scope="row">10:00</th>
+							  <td class="tabla-vuelos-text" href="#">IBE6534</td>
+							  <td>Barcelona-El Prat (BCN)</td>
+							  <td class="font-weight-bolder text-info">IBERIA</td>
+							</tr>
+							<tr>
+							  <th scope="row">13:00</th>
+							  <td class="tabla-vuelos-text" href="#">IBE6535</td>
+							  <td>Madrid-Barajas (MAD)</td>
+							  <td class="font-weight-bolder text-info">IBERIA</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+
+					<div class="row d-flex justify-content-start "> 
+						<a class="ml-5 mr-1"> Jueves 13/03/2020 </a>
+					</div>
+
+					<div class="mt-2"> 
+						<table class="table table-hover">
+						  <thead class="thead-dark">
+							<tr>
+							  <th scope="col">Hora</th>
+							  <th scope="col">Vuelo</th>
+							  <th scope="col">Destino</th>
+							  <th scope="col">Aerolinea</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">9:00</th>
+							  <td class="tabla-vuelos-text" href="#">IBE6535</td>
+							  <td>Valencia(VLC)</td>
+							  <td class="font-weight-bolder text-info">IBERIA</td>
+							</tr>
+							<tr>
+							  <th scope="row">10:00</th>
+							  <td class="tabla-vuelos-text" href="#">IBE6534</td>
+							  <td>Barcelona-El Prat (BCN)</td>
+							  <td class="font-weight-bolder text-info">IBERIA</td>
+							</tr>
+							<tr>
+							  <th scope="row">13:00</th>
+							  <td class="tabla-vuelos-text" href="#">IBE6535</td>
+							  <td>Madrid-Barajas (MAD)</td>
+							  <td class="font-weight-bolder text-info">IBERIA</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+					
+					
+					
+					
+				</div>									
+		</div>
+	</div>
+
+
+		<footer>
+			  <div id="foot">
+				<div id="contacto" class= "conten">
+				  <h3 class="titulo">Contacto</h3> <br>
+				  <div id="opciones2">
+					<i class="fas fa-phone"></i> 999 999 999 <br>
+					<i class="far fa-envelope"></i> aeropuerto@vilanova.com <br>
+					<i class="fas fa-map-marker-alt"></i> Av.de Víctor Balaguer
+				  </div>
+				</div>
+				<div id="redes" class= "conten">
+				  <h3 class="titulo">Síguenos en redes sociales</h3> <br>
+				  <div class="iconosredes">
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-youtube"></i>
+				  </div>
+				</div>
+				<div id="banners" class="conten">
+				  <h3 class="titulo">Descarga nuestra app</h3> <br>
+				  <div class="iconosapps">
+					<button class= "banner">
+					  <div class="icono">
+						<i id="google" class="fab fa-google-play"></i> 
+					  </div>
+					  <div class="letras">
+						<p>Disponible en</p>
+						<strong>Google Play</strong>
+					  </div>
+					</button>
+					<a href="google.com" target="_blank">
+					  <button class= "banner">
+						<div class="icono">
+						  <i id="apple" class="fab fa-apple fa-lg"></i> 
+						</div>
+						<div class="letras">
+						  <p>Disponible en</p>
+						  <strong>Apple Store</strong>
+						</div>
+					  </button>
+					</a>
+				  </div>
+				</div>
+			  </div> <!--- Aquí acaba el contenedor del pie de pagina -->
+			</footer>
+
+
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./js/javascript.js"></script>
+ 
+</body>
+
+</html>

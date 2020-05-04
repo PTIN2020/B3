@@ -1,0 +1,9 @@
+FROM node:carbon
+RUN mkdir -p /home/node/src/node_modules && chown -R node:node /home/node/src
+WORKDIR /home/node/src
+COPY package*.json ./
+USER node
+RUN npm install
+COPY --chown=node:node . .
+EXPOSE 3000
+CMD npm run dev --trace-warnings

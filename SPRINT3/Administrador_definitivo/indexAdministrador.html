@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Vilanova International Airport</title>
+        
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/cabecera.css">
+        <link rel="stylesheet" href="./css/mapa.css">
+        <link rel="stylesheet" href="./css/fontello.css">
+        <link rel="stylesheet" href="./js/daynocturnemode1.js">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    <body>
+    <header class="header">
+        <div class="header-item"> <h class="titulo">VIA Administrador</h></div>
+        <div id="tgl" onclick="change()" style="color:#CC5D03;" class="fas fa-sun"></div>
+        <div class="header-item"> <a href="./index.html" style="text-decoration: underline; margin-left: 80%;"> Cerrar sesión </a></div>
+    </header>
+    <div class=" cabecera ">
+        <!--OPCIONES DE ARRIBA-->
+         <ul class="nav w-100 d-flex justify-content-around" id="opciones" >
+           <li class="nav-item c1">
+             <a class="nav-link btn1" data-toggle="tab" id="navegador"href="#vuelos"> GESTIÓN DE VUELOS</a>
+           </li>
+           <li class="nav-item c2">
+             <a class="nav-link btn2" data-toggle="tab"id="navegador" href="#mapa-admin"> MAPA</a>
+           </li>
+           <li class="nav-item c3">
+            <a class="nav-link btn3"  data-toggle="tab"id="navegador" href="#coches"> GESTIÓN DE COCHES</a>
+          </li>
+         </ul>    
+     <!--DENTRO DEL BUSCADOR-->    
+    </div>
+
+    <form class="container" id="recuadro"> 
+        <div class="tab-content">
+            <div id="vuelos" class="container tab-pane active"><br>
+                <div id="tabla">
+                    <div class="container-fluid" id = "mid-container">                    
+                        <h2 class="titulo" style="text-align: center;margin:50px;">Gestión de Vuelos</h2>
+                        <div id="tablavuelos" class="ambas">
+                                <table id= "vuelos" class="table table-bordered  shadow">
+                                    <thead class="titulotabla">
+                                        <tr>
+                                            <th scope="col">Vuelo</th>
+                                            <th scope="col">Aerolínea</th>
+                                            <th scope="col">Hora de salida</th>
+                                            <th scope="col">Hora de llegada</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id = "contenido">
+                                    </tbody>
+                                </table>
+                                <div id ="hiden">
+                                    <div class="txt">
+                                        <label class="inps">Nombre de vuelo</label><input type="text" class="inpts" placeholder="p.ej VL054, FR675...">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Aerolínea</label><input type="text" class="inpts" placeholder="p.ej Vueling, SkyAirlines...">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Origen</label><input type="text" class="inpts" placeholder="p.ej VilanovaT1, VilanovaT2...">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Destino</label><input type="text" class="inpts" placeholder="p.ej Dinamarca, Francia...">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Hora de salida</label><input type="text" class="inpts" placeholder="Formato: HH:MM">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Hora de llegada</label><input type="text" class="inpts" placeholder="Formato: HH:MM">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Hora de embarque</label><input type="text" class="inpts" placeholder="Formato: HH:MM">
+                                    </div>
+                                    <div class="txt">
+                                        <label class="inps">Fecha</label><input type="text" class="inpts" placeholder="Formato: AAAA-MM-DD">
+                                    </div>
+                                    <div id="btnhiden" class ="mt-1">
+                                        <button id ="atras" type="button" class="btn  modif button-style mr-2"> Atrás </button>
+                                        <button id ="anade" type="button" class="btn  modif button-style"> Añadir</button>
+                                    </div>
+                                </div>
+                                <div class="botones">
+                                    <button  id ="modif" type="button" class="btn  modif button-style mr-2" > Modificar</button>
+                                    <button id ="abre"  type="button" class="btn  modif button-style" > Añadir</button>
+                                </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div id="mapa-admin" class="container tab-pane fade"><br>
+                <h2 class="titulo" style="text-align: center;margin:50px;">Mapa a tiempo real</h2>
+                <div style="width: 1500px; margin-right: 20%;">
+                    <div id="menumapa">
+                        <h1 class="titulofiltrado" id="titfiltrado">Filtrado de pasajeros:</h1>
+                        <ul class="nav">
+                            <li class="tipofiltro">Aerolinea<span class="icon-down-dir"></span>
+                                <ul>
+                                    <li>Vilanova Airlines</li>
+                                    <li>Vueling Airlines</li>
+                                    <li>Ryanair</li>
+                                    <li>QATAR Airways</li>
+                                    <li>KLM</li>
+                                    <li>Iberia</li>
+                                </ul>
+                            </li>   
+                            <li class="tipofiltro">Tipo de vuelo<span class="icon-down-dir"></span>
+                                <ul>
+                                    <li>Nacional</li>
+                                    <li>Internacional</li>
+                                    <li>Regional</li>
+                                </ul>
+                            </li>
+                            <li class="tipofiltro">Planta<span class="icon-down-dir"></span>
+                                <ul>
+                                    <li>Planta 0</li>
+                                    <li>Planta 1</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div id="mapa">
+                    </div>
+                </div>
+                
+
+            </div>    
+
+            <div id="coches" class="container tab-pane fade"><br> 
+                <div class="container-fluid" id = "mid-container">                    
+                    <h2 class="titulo" style="text-align: center;margin:50px;">Gestión de Coches</h2> 
+                        <div class="justify-content-center orden">
+                            <table class="table table-bordered">
+                                <thead class="titulotabla">
+                                    <tr>
+                                        <th>Coche</th>
+                                        <th>Estado</th>
+                                        <th>Localización</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contenidocoches">
+                                </tbody>
+                            </table>
+                            <div id ="hiden2">
+                                <div class="txt">
+                                    <label class="inps">Nuevo coche</label><input type="text" class="inpts2" placeholder="p.ej CH545, CH2581...">
+                                </div>
+                                <div class="txt">
+                                    <label class="inps">Nuevo estado</label><input type="text" class="inpts2" placeholder="p.ej Averiado, Cargando...">
+                                </div>
+                                <div class="txt">
+                                    <label class="inps">Nueva localización</label><input type="text" class="inpts2" placeholder="Formato: 111,11">
+                                </div>
+                                <div id="btnhiden2" class ="mt-1">
+                                    <button id="atras2" type="button" class="btn  modif button-style mr-2"> Atrás </button>
+                                    <button id ="anade2" type="button" class=" btn  modif button-style"> Añadir</button>
+                                </div>
+                            </div>
+                            <div class="botones">
+                                <button id ="modif2" type="button" class="btn  modif button-style mr-2" > Modificar</button>
+                                <button id ="abre2" type="button" class="btn  modif button-style" > Añadir</button>
+                            </div>
+                        </div>
+                </div>                           
+            </div>
+        </div>         
+    </form>           
+                                                         
+          
+    
+
+        <!-- JQuery --> 
+        <script src="./js/menu.js"></script>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/gestionvuelos.js"></script>
+        <script src="./js/ajaxgestiondecoches.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="./js/daynocturnemode1.js"></script>
+    </body>
+</html>
