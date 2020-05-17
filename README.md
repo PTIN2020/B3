@@ -12,6 +12,8 @@ S'ha reorganitzat el nostre espai personal, on podreu trobar el codi de cada SPR
 
 -Codi de l'Sprint3: [SPRINT3](https://github.com/PTIN2020/B3/tree/master/SPRINT3)
 
+-Codi de l'Sprint4: [SPRINT3](https://github.com/PTIN2020/B3/tree/master/SPRINT4)
+
 
 
 Alguns dels llenguatges i eines utilitzades per aquest grup en l'assignatura:
