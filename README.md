@@ -1,26 +1,30 @@
 # Vilanova Intelligent Airport (T2) ✈️
-# B3 - Desplegament del servei Web i definició de protocols
+B3 - Desplegament del servei Web i definició de protocols
 
 # Equip ✒️
 
 Nil Blanca
+
 Javier Delgado
+
 Josep Marches
+
 Héctor Montesinos
+
 Roger Tarrés
 
 
 # Codi i documentació del projecte per cada SPRINT 📋
 
-· Codi de l'Sprint0: [SPRINT0](https://github.com/PTIN2020/B3/tree/master/SPRINT0)
+* Codi de l'Sprint0: [SPRINT0](https://github.com/PTIN2020/B3/tree/master/SPRINT0)
 
-· Codi de l'Sprint1: [SPRINT1](https://github.com/PTIN2020/B3/tree/master/SPRINT1)
+* Codi de l'Sprint1: [SPRINT1](https://github.com/PTIN2020/B3/tree/master/SPRINT1)
 
-· Codi de l'Sprint2: [SPRINT2](https://github.com/PTIN2020/B3/tree/master/SPRINT2)
+* Codi de l'Sprint2: [SPRINT2](https://github.com/PTIN2020/B3/tree/master/SPRINT2)
 
-· Codi de l'Sprint3: [SPRINT3](https://github.com/PTIN2020/B3/tree/master/SPRINT3)
+* Codi de l'Sprint3: [SPRINT3](https://github.com/PTIN2020/B3/tree/master/SPRINT3)
 
-· Codi de l'Sprint4: [SPRINT4](https://github.com/PTIN2020/B3/tree/master/SPRINT4)
+* Codi de l'Sprint4: [SPRINT4](https://github.com/PTIN2020/B3/tree/master/SPRINT4)
 
 
 # Llenguatges i eines utilitzades 🛠️
