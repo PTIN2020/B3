@@ -26,6 +26,11 @@ Roger Tarrés
 
 * Codi de l'Sprint4: [SPRINT4](https://github.com/PTIN2020/B3/tree/master/SPRINT4)
 
+* Codi de l'Sprint5: [SPRINT5](https://github.com/PTIN2020/B3/tree/master/SPRINT5)
+
+# Més informació
+
+* Imatge Docker de la versió actual de l'API Rest: [hmonpa/apirest](https://hub.docker.com/repository/docker/hmonpa/apirest)
 
 # Llenguatges i eines utilitzades 🛠️
 
