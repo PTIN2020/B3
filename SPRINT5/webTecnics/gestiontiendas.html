@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tiendas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/cabecera.css">
+        <script src="./js/jquery.js"></script>
+        <script src="./js/gestiontiendas.js"></script>
+    </head>
+    <body>
+            <table id="tablatiendas" class="table tabla table-bordered">
+                <thead>
+                    <tr>
+                        <th> Tienda </th>
+                        <th> Tipo </th>
+                        <th> Productos </th>
+                        <th> Localización</th>
+                    </tr>
+                </thead>
+                <tbody id= "tiendas"></tbody>
+            </table>
+            <div class ="hiden" >
+                <div class="txt">
+                   <label>ID tienda</label> <input type ="text" class="inpstiendas" placeholder="p.ej: REST008">
+                </div>
+                <div class="txt">
+                    <label>Nombre tienda</label> <input type ="text" class="inpstiendas" placeholder="p.ej: MCDonald's, BurguerKing..">
+                </div>
+                <div class="txt">
+                    <label>Tipo de tienda</label>
+                    <select class="tienda selector custom-select inpstiendas">
+                        <option value="0" disabled selected>Escoge un tipo de tienda</option>
+                        <option value="1">Restauración</option>
+                        <option value="3">Ropa</option>
+                        <option value="4">Ocio</option>
+                        <option value="5">Otros</option>
+                    </select>
+                 </div>
+                <div class="txt">
+                    <label>Productos de la tienda:</label> <input type ="text" class="inpstiendas" placeholder="p.ej: Comida rápida, trajes...">
+                </div>
+                <div class="txt">
+                    <label>Localización</label> 
+                    <input type ="text" class="inpstiendas" placeholder="X de la tienda">
+                    <input type ="text" class="inpstiendas" placeholder="Y de la tienda">
+                </div>
+                <div class ="mt-1 btnhiden">
+                    <button id="atrastienda" type="button" class="btn button-style mr-2"> Atrás </button>
+                    <button id ="anadetienda" type="button" class=" btn button-style"> Añade nueva tienda</button>
+                </div>
+            </div>
+            <div class ="hiden" >
+                <div class="txt">
+                   <label>Nombre de la tienda</label> <input id="eliminartienda" type ="text" placeholder="p.ej: REST008">
+                </div>
+                <div class ="mt-1 btnhiden">
+                    <button id="atrastienda2" type="button" class="btn button-style mr-2"> Atrás </button>
+                    <button id ="eliminatienda2" type="button" class=" btn button-style eliminacion"> Eliminar</button>
+                </div>
+            </div>
+            <div class="botones">
+                <button id ="abretienda" type="button" class="btn button-style mr-2 " >Añadir</button>
+                <button id ="eliminatienda" type="button" class="btn button-style" >Eliminar</button>
+            </div>
+    </body>
+</html>
