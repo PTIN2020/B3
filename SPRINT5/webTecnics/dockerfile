@@ -26,12 +26,12 @@ RUN \
     && a2enmod rewrite ssl 
 
 #OPENSSl Instalació del certificat, si es vol canviar el site, cal canviar el registre CN="" de la comanda.
-RUN \
-    apt-get install -y openssl \
-    && openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt -subj "/C=ES/ST=Catalonia/L=VilaNova/O=Terminal 2/OU=Org/CN=areportvilacat.ddns.net" \
-    && mkdir /etc/apache2/ssl \
-    && cp server.crt /etc/apache2/ssl/server.crt \
-    && cp server.key /etc/apache2/ssl/server.key
+# RUN \
+#     apt-get install -y openssl \
+#     && openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt -subj "/C=ES/ST=Catalonia/L=VilaNova/O=Terminal 2/OU=Org/CN=areportvilacat.ddns.net" \
+#     && mkdir /etc/apache2/ssl \
+#     && cp server.crt /etc/apache2/ssl/server.crt \
+#     && cp server.key /etc/apache2/ssl/server.key
 
     # Copy configurations
 COPY ./configs/proxy_html.conf ${APACHE_CONF_DIR}/mods-available/
