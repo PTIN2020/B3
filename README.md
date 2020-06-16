@@ -1,11 +1,11 @@
 # Vilanova Intelligent Airport (T2) ✈️
 B3 - Desplegament del servei Web i definició de protocols
 
-# Equip ✒️
+# Equip 🤓
 
-Nil Blanca
+Nil Blanca 
 
-Javier Delgado
+Javier Delgado 
 
 Josep Marches
 
@@ -38,6 +38,7 @@ Roger Tarrés
 
 - [hmonpa/viaWebClients](https://hub.docker.com/repository/docker/hmonpa/viawebclients)
 
+- [hmonpa/viaWebTecnics](https://hub.docker.com/repository/docker/hmonpa/viawebtecnics)
 
 # Llenguatges i eines utilitzades 🛠️
 
@@ -65,6 +66,6 @@ Roger Tarrés
 
 - [Slack](https://app.slack.com/client/TTH9A9XFW/GTYKV7T1B/details/members): Comunicació de l'equip i entre els equips.
 
-# Llicència
+# Llicència 📄
 
 Aquest projecte està sota la Llicència [LICENSE](https://github.com/PTIN2020/B3/blob/master/LICENSE)
