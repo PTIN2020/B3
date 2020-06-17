@@ -385,8 +385,8 @@ function traerDatos() {
                                   <th>${moment(memb.boarding_time).locale('es').format('HH:mm')}</th>
                                   <th>${memb.gate.name}</th>
                                   <th>${memb.airline}</th>
-                                  <th>${memb.from} </th> 
-                                  <th>${memb.to} </th>                                                      
+                                  <th>${memb.from.split(";")[0]} </th> 
+                                  <th>${memb.to.split(";")[0]}</th>                                                      
                               </tr>`  
                               añadido = true; 
                         } 
